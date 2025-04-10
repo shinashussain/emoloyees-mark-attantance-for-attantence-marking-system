@@ -1,4 +1,5 @@
 import 'package:emplyeesapp/utils/theme.dart';
+import 'package:emplyeesapp/view/screens/Qr_scanner.dart';
 import 'package:flutter/material.dart';
 
 class WaekDashboard extends StatelessWidget {
@@ -33,13 +34,21 @@ class WaekDashboard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => QRScannerScreen()),
+                );
+              },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
+                backgroundColor: const Color.fromARGB(255, 31, 183, 36),
                 shape: StadiumBorder(),
                 minimumSize: Size(double.infinity, 50),
               ),
-              child: Text("scan now"),
+              child: Text(
+                "scan now",
+                style: AppTheme.textTheme.bodyMedium,
+              ),
             ),
           ),
         ],

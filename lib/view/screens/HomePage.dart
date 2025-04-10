@@ -1,5 +1,5 @@
 import 'package:emplyeesapp/utils/theme.dart';
-import 'package:emplyeesapp/view/screens/monthly_record.dart';
+import 'package:emplyeesapp/view/screens/MonthsScreen.dart';
 import 'package:emplyeesapp/view/screens/waek_dashbord.dart';
 import 'package:emplyeesapp/view_Model/provider/homepageprovider.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: homepageProvider.selectedIndex == 0
           ? WaekDashboard()
-          : MonthlyRecord(),
+          : MonthsScreen(),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: homepageProvider.selectedIndex,
         onTap: (index) {

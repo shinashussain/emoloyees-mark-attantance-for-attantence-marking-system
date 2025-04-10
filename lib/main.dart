@@ -1,4 +1,5 @@
 import 'package:emplyeesapp/view/screens/HomePage.dart';
+import 'package:emplyeesapp/view_Model/provider/Qrscannerprovider.dart';
 import 'package:emplyeesapp/view_Model/provider/homepageprovider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => HomepageProvider()),
+        ChangeNotifierProvider(create: (_) => QrScannerprovider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

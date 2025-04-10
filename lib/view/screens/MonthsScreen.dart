@@ -1,8 +1,8 @@
 import 'package:emplyeesapp/utils/theme.dart';
 import 'package:flutter/material.dart';
 
-class MonthlyRecord extends StatelessWidget {
-  const MonthlyRecord({super.key});
+class MonthsScreen extends StatelessWidget {
+  const MonthsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
