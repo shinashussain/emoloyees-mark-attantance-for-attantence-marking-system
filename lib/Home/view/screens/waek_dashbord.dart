@@ -1,5 +1,6 @@
 import 'package:emplyeesapp/utils/theme.dart';
-import 'package:emplyeesapp/view/screens/Qr_scanner.dart';
+import 'package:emplyeesapp/Home/view/screens/Qr_scanner.dart';
+import 'package:emplyeesapp/Home/view/widgets/custemlisttile.dart';
 import 'package:flutter/material.dart';
 
 class WaekDashboard extends StatelessWidget {
@@ -21,13 +22,7 @@ class WaekDashboard extends StatelessWidget {
             child: ListView.builder(
               itemCount: 7,
               itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(
-                    'YYYY-MM-DD',
-                    style: AppTheme.textTheme.bodyMedium,
-                  ),
-                  trailing: Icon(Icons.check_box, color: Colors.teal),
-                );
+                return Custemlisttile();
               },
             ),
           ),

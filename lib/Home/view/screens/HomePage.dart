@@ -1,6 +1,6 @@
 import 'package:emplyeesapp/utils/theme.dart';
-import 'package:emplyeesapp/view/screens/MonthsScreen.dart';
-import 'package:emplyeesapp/view/screens/waek_dashbord.dart';
+import 'package:emplyeesapp/Home/view/screens/monthspage.dart';
+import 'package:emplyeesapp/Home/view/screens/waek_dashbord.dart';
 import 'package:emplyeesapp/view_Model/provider/homepageprovider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

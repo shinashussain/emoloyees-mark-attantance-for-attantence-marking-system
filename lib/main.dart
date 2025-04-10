@@ -1,4 +1,4 @@
-import 'package:emplyeesapp/view/screens/HomePage.dart';
+import 'package:emplyeesapp/Home/view/screens/HomePage.dart';
 import 'package:emplyeesapp/view_Model/provider/Qrscannerprovider.dart';
 import 'package:emplyeesapp/view_Model/provider/homepageprovider.dart';
 import 'package:flutter/material.dart';
