@@ -21,7 +21,7 @@ class QRScannerScreen extends StatelessWidget {
                   final String? code = barcode.rawValue;
                   if (code != null) {
                     _qrscannerprovider.onQRScanned(code);
-                    break; // Only scan first one
+                    break;
                   }
                 }
               },

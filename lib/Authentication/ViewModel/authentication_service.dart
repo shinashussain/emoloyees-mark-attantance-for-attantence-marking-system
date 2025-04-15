@@ -3,6 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 class AuthenticationService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
+  User? get currentuser => _firebaseAuth.currentUser;
+
   Future<User?> login(String email, String password) async {
     try {
       final result = await _firebaseAuth.signInWithEmailAndPassword(

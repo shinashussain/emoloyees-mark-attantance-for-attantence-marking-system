@@ -17,7 +17,10 @@ class Monthlyrecordscreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: 10,
         itemBuilder: (context, index) {
-          return Custemlisttile();
+          return Custemlisttile(
+            date: 'Date $index',
+            presant: index % 2 == 0,
+          );
         },
       ),
     );

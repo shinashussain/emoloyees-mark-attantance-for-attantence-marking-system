@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
+import 'package:emplyeesapp/Home/view_Model/Services/Firestore_servise.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,7 @@ class QrScannerprovider extends ChangeNotifier {
       scannedCode = code;
       showPopup = true;
       notifyListeners();
-
+      FirestoreServise().marktodyattentance();
       Future.delayed(Duration(seconds: 2), () {
         showPopup = false;
         notifyListeners();
